@@ -2,7 +2,7 @@
 declare const React: any;
 declare const ReactDOM: any;
 
-const { useState, useEffect, StrictMode } = React;
+const { useState, useEffect, useRef, StrictMode } = React;
 const { createRoot } = ReactDOM;
 
 // Data structure types
@@ -773,6 +773,45 @@ const styles: { [key: string]: React.CSSProperties } = {
     minWidth: '90px', // to prevent layout shift
     textAlign: 'right',
   },
+  weekTabsContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    flexWrap: 'wrap',
+    marginTop: '1rem',
+  },
+  weekTab: {
+    padding: '0.5rem',
+    cursor: 'pointer',
+    border: 'none',
+    background: 'white',
+    borderRadius: '8px',
+    fontSize: '0.9rem',
+    fontFamily: "'Poppins', sans-serif",
+    fontWeight: 600,
+    color: 'var(--dark-gray)',
+    transition: 'all 0.3s ease',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '0.25rem',
+    minWidth: '50px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+  },
+  activeWeekTab: {
+    backgroundColor: 'var(--secondary-color)',
+    color: 'white',
+    transform: 'translateY(-2px)',
+    boxShadow: '0 4px 8px rgba(59, 130, 246, 0.3)',
+  },
+  weekNumber: {
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+  },
+  weekProgress: {
+    fontSize: '0.7rem',
+    opacity: 0.8,
+  },
   // Quiz styles
   quizContainer: {
     maxWidth: '800px',
@@ -1092,6 +1131,8 @@ interface WeekCardProps {
   week: Week;
   checkedItems: { [key: string]: boolean };
   onCheck: (id: string) => void;
+  weekIndex?: number;
+  weekRef?: (el: HTMLDivElement | null) => void;
 }
 
 interface TabProps {
@@ -1375,7 +1416,7 @@ const DayCard = ({ day, weekLabel, checkedItems, onCheck, onQuizClick }: DayCard
   </div>
 );
 
-const WeekCard = ({ week, checkedItems, onCheck, onQuizClick }: WeekCardProps & { onQuizClick?: () => void }) => {
+const WeekCard = ({ week, checkedItems, onCheck, onQuizClick, weekIndex, weekRef }: WeekCardProps & { onQuizClick?: () => void }) => {
   let totalTasks = 0;
   let completedTasks = 0;
 
@@ -1394,7 +1435,7 @@ const WeekCard = ({ week, checkedItems, onCheck, onQuizClick }: WeekCardProps & 
   const progress = totalTasks > 0 ? (completedTasks / totalTasks) * 100 : 0;
 
   return (
-    <div style={styles.weekCard}>
+    <div ref={weekRef} style={styles.weekCard}>
       <div style={styles.weekHeader}>
         <h3 style={styles.weekLabel}>{week.week_label}</h3>
         <div style={styles.weekProgress}>
@@ -1423,9 +1464,32 @@ const Tab = ({ label, isActive, onClick }: TabProps) => (
   </button>
 );
 
+const WeekTab = ({ weekNumber, weekTitle, isActive, onClick, progress }: { 
+  weekNumber: number; 
+  weekTitle: string; 
+  isActive: boolean; 
+  onClick: () => void; 
+  progress: number; 
+}) => (
+  <button 
+    onClick={onClick} 
+    style={{ 
+      ...styles.weekTab, 
+      ...(isActive ? styles.activeWeekTab : {}) 
+    }} 
+    aria-selected={isActive}
+    title={weekTitle}
+  >
+    <span style={styles.weekNumber}>{weekNumber}</span>
+    <span style={styles.weekProgress}>{progress}%</span>
+  </button>
+);
+
 const App = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
+  const [currentWeek, setCurrentWeek] = useState(0);
+  const weekRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
   
   // Quiz state
   const [quizMode, setQuizMode] = useState<'main' | 'topic-selection' | 'setup' | 'quiz' | 'results'>('main');
@@ -1445,6 +1509,29 @@ const App = () => {
     } catch (error) {
       console.error("Could not load progress from localStorage", error);
     }
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 200; // Offset for header
+      
+      // Find which week is currently in view
+      Object.keys(weekRefs.current).forEach((weekIndex) => {
+        const weekRef = weekRefs.current[parseInt(weekIndex)];
+        if (weekRef) {
+          const rect = weekRef.getBoundingClientRect();
+          const elementTop = rect.top + window.scrollY;
+          const elementBottom = elementTop + rect.height;
+          
+          if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+            setCurrentWeek(parseInt(weekIndex));
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleCheck = (id: string) => {
@@ -1566,6 +1653,40 @@ const App = () => {
     setQuizResult(null);
   };
 
+  const scrollToWeek = (weekIndex: number) => {
+    const weekRef = weekRefs.current[weekIndex];
+    if (weekRef) {
+      const headerHeight = 180; // Height of fixed header
+      const elementTop = weekRef.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const calculateWeekProgress = (weekIndex: number) => {
+    const week = currentPlanSection.weeks[weekIndex];
+    if (!week) return 0;
+
+    let totalTasks = 0;
+    let completedTasks = 0;
+
+    week.days.forEach(day => {
+      day.tasks.forEach(task => {
+        task.items.forEach((item, itemIndex) => {
+          totalTasks++;
+          const uniqueId = `${week.week_label}-${day.day_label}-${task.skill}-${itemIndex}`;
+          if (checkedItems[uniqueId]) {
+            completedTasks++;
+          }
+        });
+      });
+    });
+
+    return totalTasks > 0 ? (completedTasks / totalTasks) * 100 : 0;
+  };
+
   const currentPlanSection = learningPlan[activeTab];
 
   // Render quiz components
@@ -1640,10 +1761,31 @@ const App = () => {
         ))}
       </nav>
 
+      <div style={styles.weekTabsContainer}>
+        {currentPlanSection.weeks.map((week, index) => (
+          <WeekTab
+            key={index}
+            weekNumber={index + 1}
+            weekTitle={week.week_label}
+            isActive={currentWeek === index}
+            onClick={() => scrollToWeek(index)}
+            progress={Math.round(calculateWeekProgress(index))}
+          />
+        ))}
+      </div>
+
       <main style={styles.contentContainer}>
         <p style={styles.monthGoal}>{currentPlanSection.goal}</p>
         {currentPlanSection.weeks.map((week, index) => (
-          <WeekCard key={week.week_label + index} week={week} checkedItems={checkedItems} onCheck={handleCheck} onQuizClick={() => setQuizMode('topic-selection')} />
+          <WeekCard 
+            key={week.week_label + index} 
+            week={week} 
+            checkedItems={checkedItems} 
+            onCheck={handleCheck} 
+            onQuizClick={() => setQuizMode('topic-selection')}
+            weekIndex={index}
+            weekRef={(el) => { weekRefs.current[index] = el; }}
+          />
         ))}
       </main>
     </div>
