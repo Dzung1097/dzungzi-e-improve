@@ -799,7 +799,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   activeWeekTab: {
-    backgroundColor: 'var(--secondary-color)',
+    backgroundColor: '#3b82f6',
     color: 'white',
     transform: 'translateY(-2px)',
     boxShadow: '0 4px 8px rgba(59, 130, 246, 0.3)',
@@ -1662,6 +1662,7 @@ const App = () => {
         top: elementTop,
         behavior: 'smooth'
       });
+      // Không set currentWeek khi click, chỉ để scroll tracking tự động highlight
     }
   };
 
