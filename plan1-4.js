@@ -36,14 +36,14 @@ window.plan1_4 = {
             { skill: "Nói 🗣️", items: ["Prompt: 'Mô tả cách bạn làm việc'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn chia sẻ quy trình làm việc thường ngày."] },
         ]},
         { day_label: "Thứ 7", tasks: [
-            { skill: "Ôn tập Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Sử dụng flashcards (Quizlet, Anki) để kiểm tra."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Sử dụng flashcards (Quizlet, Anki) để kiểm tra."] },
             { skill: "Nghe 🎧", items: ["Học Unit 11 & 12 - Tactics for Listening: Developing", "Ôn tập nhanh Unit 1-12."] },
             { skill: "Nói 🗣️", items: ["Chọn 2 prompts bạn thấy khó nhất trong tuần và thực hành lại."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
             { skill: "Nghe 🎧", items: ["Nghe lại và chép chính tả một đoạn hội thoại từ 1-2 unit bạn cảm thấy khó nhất trong tuần."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại prompt 'Tự giới thiệu' và 'Mô tả dự án gần nhất'. Tự ghi âm và nghe lại để cải thiện."] },
-            { skill: "Ôn tập ✍️", items: ["Xem lại các thì đã học. Viết 5 câu về công việc của bạn, mỗi câu dùng một thì khác nhau."] },
+            { skill: "Viết 📝", items: ["Xem lại các thì đã học. Viết 5 câu về công việc của bạn, mỗi câu dùng một thì khác nhau."] },
         ]},
       ]
     },
@@ -81,14 +81,14 @@ window.plan1_4 = {
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi về yêu cầu API'. Role-play: Bạn là Business Analyst, AI là Technical Partner. Tình huống: Bạn hỏi đối tác về format dữ liệu API họ cung cấp."] },
         ]},
         { day_label: "Thứ 7", tasks: [
-            { skill: "Ôn tập Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Nhóm các từ theo chủ đề (SDLC, Agile, Testing) để dễ nhớ."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Nhóm các từ theo chủ đề (SDLC, Agile, Testing) để dễ nhớ."] },
             { skill: "Nghe 🎧", items: ["Học Unit 23 & 24. HOÀN THÀNH SÁCH!", "Ôn tập nhanh Unit 13-24."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại 2-3 prompt về 'Gặp khách hàng' mà bạn thấy cần cải thiện."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
             { skill: "Nghe 🎧", items: ["Nghe lại toàn bộ 24 unit ở tốc độ 1.25x hoặc 1.5x để thử thách.", "Ghi lại 10 cấu trúc câu hay nhất bạn học được từ cuốn sách."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại 2-3 prompt về 'Gặp khách hàng' với vai trò ngược lại (bạn là khách hàng)."] },
-            { skill: "Ôn tập ✍️", items: ["Viết một đoạn văn ngắn so sánh 2 phương pháp testing, ví dụ 'unit testing' và 'system testing'."] },
+            { skill: "Viết 📝", items: ["Viết một đoạn văn ngắn so sánh 2 phương pháp testing, ví dụ 'unit testing' và 'system testing'."] },
         ]},
       ]
     },
@@ -126,14 +126,14 @@ window.plan1_4 = {
             { skill: "Nói 🗣️", items: ["Prompt: 'Cảm ơn sau khi làm việc cùng nhau'. Role-play: Bạn là Business Analyst, AI là Developer. Tình huống: Bạn cảm ơn dev đã giúp đỡ trong dự án vừa rồi."] },
         ]},
         { day_label: "Thứ 7", tasks: [
-            { skill: "Ôn tập Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Vẽ sơ đồ tư duy liên kết các từ về Banking và Fintech."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Vẽ sơ đồ tư duy liên kết các từ về Banking và Fintech."] },
             { skill: "Nghe 🎧", items: ["Nghe lại một bài podcast/video trong tuần và tóm tắt ý chính."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại 2-3 prompt về 'Business Communication' bạn thấy cần cải thiện."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
             { skill: "Nghe 🎧", items: ["Xem 1 video TED Talk về chủ đề công nghệ và tương lai."] },
             { skill: "Nói 🗣️", items: ["Tổng hợp và thực hành lại 5 prompt 'Business Communication' của tuần."] },
-            { skill: "Ôn tập ✍️", items: ["Viết một đoạn văn (100-150 từ) giải thích một khái niệm Fintech bạn thấy thú vị nhất (VD: blockchain, robo-advisor)."] },
+            { skill: "Viết 📝", items: ["Viết một đoạn văn (100-150 từ) giải thích một khái niệm Fintech bạn thấy thú vị nhất (VD: blockchain, robo-advisor)."] },
         ]},
       ]
     },
@@ -171,14 +171,14 @@ window.plan1_4 = {
             { skill: "Nói 🗣️", items: ["Prompt: 'Đặt câu hỏi ngược cho nhà tuyển dụng'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn hỏi về môi trường làm việc, cơ hội thăng tiến trong công ty."] },
         ]},
         { day_label: "Thứ 7", tasks: [
-            { skill: "Ôn tập Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Tạo các câu chuyện nhỏ sử dụng các nhóm từ vựng (elicitation, documentation, modeling)."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Tạo các câu chuyện nhỏ sử dụng các nhóm từ vựng (elicitation, documentation, modeling)."] },
             { skill: "Nghe 🎧", items: ["Nghe lại một bài podcast/video trong tuần và tóm tắt ý chính bằng 3-5 câu."] },
             { skill: "Nói 🗣️", items: ["Tổng ôn 10 prompt 'Phỏng vấn xin việc'. Chọn 3 cái bạn yếu nhất để thực hành lại."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
             { skill: "Nghe 🎧", items: ["Xem 1 video TED-Ed về chủ đề giao tiếp hoặc tâm lý học."] },
             { skill: "Nói 🗣️", items: ["Thực hành một buổi phỏng vấn giả định ngắn (khoảng 10 phút) bao gồm: giới thiệu, nói về dự án, trả lời 1-2 câu hỏi khó, và đặt câu hỏi ngược."] },
-            { skill: "Ôn tập ✍️", items: ["Viết một phần 'Executive Summary' giả định cho một dự án xây dựng app e-wallet."] },
+            { skill: "Viết 📝", items: ["Viết một phần 'Executive Summary' giả định cho một dự án xây dựng app e-wallet."] },
         ]},
       ]
     }

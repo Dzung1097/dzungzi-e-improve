@@ -683,12 +683,25 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginBottom: '2rem',
     boxShadow: '0 4px 12px rgba(0, 95, 115, 0.1)',
   },
-  weekLabel: {
-    fontSize: '1.5rem',
-    color: 'var(--primary-color)',
+  weekHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: '1rem',
     borderBottom: '2px solid var(--light-gray)',
     paddingBottom: '0.5rem',
+  },
+  weekLabel: {
+    fontSize: '1.2rem',
+    color: 'var(--primary-color)',
+    margin: 0,
+    flex: 1,
+  },
+  weekProgress: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    minWidth: '120px',
   },
   daysGrid: {
     display: 'grid',
@@ -1382,13 +1395,15 @@ const WeekCard = ({ week, checkedItems, onCheck, onQuizClick }: WeekCardProps & 
 
   return (
     <div style={styles.weekCard}>
-      <h3 style={styles.weekLabel}>{week.week_label}</h3>
-      <div style={styles.progressContainer}>
-        <div style={styles.progressBarOuter}>
-          <div style={{ ...styles.progressBarInner, width: `${progress}%` }}></div>
-        </div>
-        <div style={styles.progressText}>
-          {Math.round(progress)}% Hoàn thành
+      <div style={styles.weekHeader}>
+        <h3 style={styles.weekLabel}>{week.week_label}</h3>
+        <div style={styles.weekProgress}>
+          <div style={styles.progressBarOuter}>
+            <div style={{ ...styles.progressBarInner, width: `${progress}%` }}></div>
+          </div>
+          <div style={styles.progressText}>
+            {Math.round(progress)}%
+          </div>
         </div>
       </div>
       <div style={styles.daysGrid}>
