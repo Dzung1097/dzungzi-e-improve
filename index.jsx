@@ -1097,6 +1097,14 @@ const App = () => {
             >
               🧠 Kiểm tra từ vựng
             </button>
+            <a
+              href="https://dzung1097.github.io/vocab-quiz-app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ ...styles.quizButton, textDecoration: 'none', display: 'inline-block' }}
+            >
+              🔊 Vocal Quiz
+            </a>
           </div>
         </div>
         
