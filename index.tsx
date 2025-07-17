@@ -133,13 +133,13 @@ const learningPlan: LearningPlanSection[] = [
         days: [
           { day_label: "Thứ 2", tasks: [
               { skill: "Từ vựng 📚", items: ["colleague", "agenda", "minutes (of meeting)", "follow-up", "client", "stakeholder", "project", "task", "objective", "goal", "strategy", "tactic", "resource", "budget", "schedule", "milestone", "deadline", "deliverable", "outcome", "scope"] },
-              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Hiện tại (Đơn, Tiếp diễn, Hoàn thành)"] },
+              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Đơn (Hiện tại, Quá khứ, Tương lai)"] },
               { skill: "Nghe 🎧", items: ["Học Unit 1 & 2 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Tự giới thiệu'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn giới thiệu bản thân ngắn gọn trong buổi phỏng vấn."] },
           ]},
           { day_label: "Thứ 3", tasks: [
               { skill: "Từ vựng 📚", items: ["communicate", "collaborate", "coordinate", "delegate", "manage", "lead", "innovate", "improve", "analyze", "solve", "present", "report", "document", "research", "develop", "implement", "test", "deploy", "support", "maintain"] },
-              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Quá khứ (Đơn, Tiếp diễn, Hoàn thành)"] },
+              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Tiếp diễn (Hiện tại, Quá khứ, Tương lai)"] },
               { skill: "Nghe 🎧", items: ["Học Unit 3 & 4 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Mô tả dự án gần nhất'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn chia sẻ thông tin về dự án gần đây bạn tham gia."] },
           ]},
@@ -151,7 +151,7 @@ const learningPlan: LearningPlanSection[] = [
           ]},
           { day_label: "Thứ 5", tasks: [
               { skill: "Từ vựng 📚", items: ["meeting", "presentation", "workshop", "brainstorming", "discussion", "feedback", "proposal", "agreement", "contract", "negotiation", "issue", "risk", "assumption", "constraint", "dependency", "priority", "status", "progress", "blocker", "escalate"] },
-              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Tương lai (Đơn, Gần, Hoàn thành)"] },
+              { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Hoàn thành (Hiện tại, Quá khứ, Tương lai)"] },
               { skill: "Nghe 🎧", items: ["Học Unit 7 & 8 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Giới thiệu công cụ bạn thường dùng'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn nói về các công cụ như Jira, Confluence, Figma bạn thường dùng."] },
           ]},
@@ -645,7 +645,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '1rem 1.5rem',
     cursor: 'pointer',
     border: 'none',
-    background: 'none',
+    backgroundColor: 'transparent',
     fontSize: '1.1rem',
     fontFamily: "'Poppins', sans-serif",
     fontWeight: 600,
@@ -784,7 +784,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '0.5rem',
     cursor: 'pointer',
     border: 'none',
-    background: 'white',
+    backgroundColor: 'white',
     borderRadius: '8px',
     fontSize: '0.9rem',
     fontFamily: "'Poppins', sans-serif",
@@ -1488,7 +1488,7 @@ const WeekTab = ({ weekNumber, weekTitle, isActive, onClick, progress }: {
 const App = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
-  const [currentWeek, setCurrentWeek] = useState(0);
+  const [activeWeek, setActiveWeek] = useState(0);
   const weekRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
   
   // Quiz state
@@ -1511,28 +1511,7 @@ const App = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200; // Offset for header
-      
-      // Find which week is currently in view
-      Object.keys(weekRefs.current).forEach((weekIndex) => {
-        const weekRef = weekRefs.current[parseInt(weekIndex)];
-        if (weekRef) {
-          const rect = weekRef.getBoundingClientRect();
-          const elementTop = rect.top + window.scrollY;
-          const elementBottom = elementTop + rect.height;
-          
-          if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
-            setCurrentWeek(parseInt(weekIndex));
-          }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // Bỏ scroll tracking để đơn giản hóa
 
   const handleCheck = (id: string) => {
     const newCheckedItems = { ...checkedItems, [id]: !checkedItems[id] };
@@ -1662,7 +1641,7 @@ const App = () => {
         top: elementTop,
         behavior: 'smooth'
       });
-      // Không set currentWeek khi click, chỉ để scroll tracking tự động highlight
+      setActiveWeek(weekIndex); // Set active week khi click
     }
   };
 
@@ -1757,7 +1736,10 @@ const App = () => {
             key={plan.title} 
             label={plan.title.split(':')[0]} 
             isActive={activeTab === index} 
-            onClick={() => setActiveTab(index)} 
+            onClick={() => {
+              setActiveTab(index);
+              setActiveWeek(0); // Reset activeWeek khi chuyển tab
+            }} 
           />
         ))}
       </nav>
@@ -1768,7 +1750,7 @@ const App = () => {
             key={index}
             weekNumber={index + 1}
             weekTitle={week.week_label}
-            isActive={currentWeek === index}
+            isActive={activeWeek === index}
             onClick={() => scrollToWeek(index)}
             progress={Math.round(calculateWeekProgress(index))}
           />
