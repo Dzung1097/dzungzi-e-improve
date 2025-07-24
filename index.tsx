@@ -134,36 +134,36 @@ const learningPlan: LearningPlanSection[] = [
           { day_label: "Thứ 2", tasks: [
               { skill: "Từ vựng 📚", items: ["colleague", "agenda", "minutes (of meeting)", "follow-up", "client", "stakeholder", "project", "task", "objective", "goal", "strategy", "tactic", "resource", "budget", "schedule", "milestone", "deadline", "deliverable", "outcome", "scope"] },
               { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Đơn (Hiện tại, Quá khứ, Tương lai)"] },
-              { skill: "Nghe 🎧", items: ["Học Unit 1 & 2 - Tactics for Listening: Developing"] },
+              { skill: "Nghe 🎧", items: ["Học Unit 1 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Tự giới thiệu'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn giới thiệu bản thân ngắn gọn trong buổi phỏng vấn."] },
           ]},
           { day_label: "Thứ 3", tasks: [
               { skill: "Từ vựng 📚", items: ["communicate", "collaborate", "coordinate", "delegate", "manage", "lead", "innovate", "improve", "analyze", "solve", "present", "report", "document", "research", "develop", "implement", "test", "deploy", "support", "maintain"] },
               { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Tiếp diễn (Hiện tại, Quá khứ, Tương lai)"] },
-              { skill: "Nghe 🎧", items: ["Học Unit 3 & 4 - Tactics for Listening: Developing"] },
+              { skill: "Nghe 🎧", items: ["Học Unit 2 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Mô tả dự án gần nhất'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn chia sẻ thông tin về dự án gần đây bạn tham gia."] },
           ]},
           { day_label: "Thứ 4", tasks: [
               { skill: "Từ vựng 📚", items: ["software", "hardware", "application", "server", "database", "network", "interface", "feature", "bug", "user", "developer", "administrator", "system", "platform", "version", "update", "upgrade", "backup", "data", "security"] },
               { skill: "Viết 📝", items: ["Viết một email ngắn cho đồng nghiệp để yêu cầu thông tin, sử dụng các từ 'follow-up', 'deadline'."] },
-              { skill: "Nghe 🎧", items: ["Học Unit 5 & 6 - Tactics for Listening: Developing"] },
+              { skill: "Nghe 🎧", items: ["Học Unit 3 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Nói về kỹ năng chính'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn trình bày kỹ năng nổi bật nhất của mình."] },
           ]},
           { day_label: "Thứ 5", tasks: [
               { skill: "Từ vựng 📚", items: ["meeting", "presentation", "workshop", "brainstorming", "discussion", "feedback", "proposal", "agreement", "contract", "negotiation", "issue", "risk", "assumption", "constraint", "dependency", "priority", "status", "progress", "blocker", "escalate"] },
               { skill: "Ngữ pháp ✍️", items: ["Ôn tập các thì Hoàn thành (Hiện tại, Quá khứ, Tương lai)"] },
-              { skill: "Nghe 🎧", items: ["Học Unit 7 & 8 - Tactics for Listening: Developing"] },
+              { skill: "Nghe 🎧", items: ["Học Unit 4 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Giới thiệu công cụ bạn thường dùng'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn nói về các công cụ như Jira, Confluence, Figma bạn thường dùng."] },
           ]},
           { day_label: "Thứ 6", tasks: [
               { skill: "Từ vựng 📚", items: ["efficient", "effective", "reliable", "scalable", "flexible", "user-friendly", "intuitive", "robust", "secure", "confidential", "transparent", "consistent", "accurate", "compliant", "innovative", "agile", "lean", "impact", "value", "benefit"] },
               { skill: "Viết 📝", items: ["Viết 3-4 câu mô tả một ứng dụng 'user-friendly', sử dụng các tính từ đã học."] },
-              { skill: "Nghe 🎧", items: ["Học Unit 9 & 10 - Tactics for Listening: Developing"] },
+              { skill: "Nghe 🎧", items: ["Học Unit 5 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Prompt: 'Mô tả cách bạn làm việc'. Role-play: Bạn là Ứng viên, AI là Nhà tuyển dụng. Tình huống: Bạn chia sẻ quy trình làm việc thường ngày."] },
           ]},
           { day_label: "Thứ 7", tasks: [
               { skill: "Ôn tập Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Sử dụng flashcards (Quizlet, Anki) để kiểm tra."] },
-              { skill: "Nghe 🎧", items: ["Học Unit 11 & 12 - Tactics for Listening: Developing", "Ôn tập nhanh Unit 1-12."] },
+              { skill: "Nghe 🎧", items: ["Học Unit 6 - Tactics for Listening: Developing"] },
               { skill: "Nói 🗣️", items: ["Chọn 2 prompts bạn thấy khó nhất trong tuần và thực hành lại."] },
           ]},
           { day_label: "Chủ nhật", tasks: [

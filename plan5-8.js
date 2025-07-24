@@ -1,28 +1,28 @@
-// Tuần 5-8: Kỹ năng nâng cao & Ứng dụng
+// Tuần 5-8: Kỹ năng nâng cao & Ứng dụng (Units 1,2,3,4,5,8,9,11,18)
 window.plan5_8 = {
-  title: "Tuần 5-8: Kỹ năng nâng cao & Ứng dụng",
-  goal: "",
+  title: "Tuần 5-8: Kỹ năng nâng cao & Ứng dụng (Units 1,2,3,4,5,8,9,11,18)",
+  goal: "Nâng cao kỹ năng giao tiếp và ứng dụng thực tế với các unit đã học. Tập trung vào các tình huống phức tạp và chuyên sâu.",
   weeks: [
     // Tuần 5
     {
-      week_label: "Tuần 5: API, Microservices & System Integration",
+      week_label: "Tuần 5: Advanced Business Communication (Review Units 1-5)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["API", "endpoint", "request", "response", "payload", "JSON", "XML", "REST", "SOAP", "HTTP methods (GET, POST, PUT, DELETE)", "status code", "authentication token", "API key", "rate limiting", "SDK", "API documentation", "Swagger", "Postman", "integration", "third-party"] },
             { skill: "Ngữ pháp ✍️", items: ["Reported Speech (Statements) - Câu tường thuật"] },
-            { skill: "Nghe 🎧", items: ["Xem video 'What is an API?' trên kênh 'MuleSoft Videos' Youtube."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 1-2 với focus vào business vocabulary"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi về yêu cầu dự án mới'. Role-play: Bạn là Business Analyst, AI là Client. Tình huống: Bạn cần hỏi khách hàng vài câu để hiểu mục tiêu dự án mới."] },
         ]},
         { day_label: "Thứ 3", tasks: [
             { skill: "Từ vựng 📚", items: ["architecture", "monolith", "microservices", "service", "decoupled", "independent", "scalable", "resilient", "API Gateway", "service discovery", "container", "Docker", "Kubernetes", "orchestration", "event-driven", "message queue", "publish-subscribe", "synchronous", "asynchronous", "latency"] },
             { skill: "Ngữ pháp ✍️", items: ["Reported Speech (Questions)"] },
-            { skill: "Nghe 🎧", items: ["Xem video 'Microservices vs Monolith' trên Youtube."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 3-4 với focus vào technical vocabulary"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Làm rõ yêu cầu tính năng đăng nhập'. Role-play: Bạn là Business Analyst, AI là Developer. Tình huống: Bạn muốn xác nhận lại logic của tính năng đăng nhập với dev."] },
         ]},
         { day_label: "Thứ 4", tasks: [
             { skill: "Từ vựng 📚", items: ["database", "relational (SQL)", "non-relational (NoSQL)", "schema", "table", "query", "SELECT", "JOIN", "data warehouse", "ETL", "data lake", "analytics", "business intelligence (BI)", "dashboard", "visualization", "data migration", "data mapping", "CRUD", "primary key", "foreign key"] },
             { skill: "Viết 📝", items: ["Viết một yêu cầu đơn giản cho một API endpoint mới: mô tả request, response và mục đích."] },
-            { skill: "Nghe 🎧", items: ["Nghe podcast 'Software Engineering Daily' về chủ đề database."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 5 với focus vào project management vocabulary"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Thảo luận tính năng lọc kết quả'. Role-play: Bạn là Business Analyst, AI là Tester. Tình huống: Bạn cùng tester làm rõ cách hoạt động của tính năng lọc."] },
         ]},
         { day_label: "Thứ 5", tasks: [
@@ -51,18 +51,18 @@ window.plan5_8 = {
     },
     // Tuần 6
     {
-      week_label: "Tuần 6: Team Collaboration & Conflict Resolution",
+      week_label: "Tuần 6: Team Collaboration & Conflict Resolution (Review Units 8-9)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["active listening", "paraphrasing", "summarizing", "clarifying question", "empathy", "rapport", "body language", "tone of voice", "assertiveness", "confidence", "conciseness", "clarity", "persuasion", "influence", "facilitation", "presentation skills", "public speaking", "storytelling", "feedback", "criticism"] },
             { skill: "Ngữ pháp ✍️", items: ["Gerunds and Infinitives (V-ing vs to V)"] },
-            { skill: "Nghe 🎧", items: ["Xem một TED Talk về 'Active Listening' hoặc 'How to speak so that people want to listen'."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 8 với focus vào client communication"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi tiến độ tính năng mới'. Role-play: Bạn là Business Analyst, AI là Developer. Tình huống: Bạn hỏi dev về tiến độ làm phần upload tài liệu."] },
         ]},
         { day_label: "Thứ 3", tasks: [
             { skill: "Từ vựng 📚", items: ["negotiation", "bargaining", "compromise", "win-win", "win-lose", "BATNA", "concession", "objective", "position", "interest", "trade-off", "leverage", "counter-offer", "agreement", "deadlock", "common ground", "mutual benefit", "term", "stake", "escalation"] },
             { skill: "Ngữ pháp ✍️", items: ["Phrasal Verbs thông dụng trong công việc (e.g., follow up, bring up, call off, figure out)"] },
-            { skill: "Nghe 🎧", items: ["Nghe podcast 'Negotiate Anything' về một tình huống đàm phán cơ bản."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 9 với focus vào system introduction"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Kiểm tra lỗi đăng nhập với tester'. Role-play: Bạn là Business Analyst, AI là QA Tester. Tình huống: Bạn phối hợp với QA để xác định nguyên nhân lỗi đăng nhập."] },
         ]},
         { day_label: "Thứ 4", tasks: [
@@ -97,12 +97,12 @@ window.plan5_8 = {
     },
     // Tuần 7
     {
-      week_label: "Tuần 7: Advanced BA & Agile Practices",
+      week_label: "Tuần 7: Advanced BA & Agile Practices (Review Unit 11)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["user story mapping", "backbone", "walking skeleton", "persona", "user journey", "empathy map", "pain point", "gain", "release planning", "sprint goal", "capacity", "story point", "estimation", "planning poker", "relative sizing", "theme", "initiative", "roadmap", "feature toggle", "A/B testing"] },
             { skill: "Ngữ pháp ✍️", items: ["Review câu điều kiện hỗn hợp (Mixed Conditionals)"] },
-            { skill: "Nghe 🎧", items: ["Xem video 'User Story Mapping' của Jeff Patton trên Youtube."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 11 với focus vào banking vocabulary"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Báo cáo tiến độ sprint'. Role-play: Bạn là Business Analyst, AI là Project Manager. Tình huống: Bạn trình bày ngắn gọn tiến độ các task trong sprint hiện tại."] },
         ]},
         { day_label: "Thứ 3", tasks: [
@@ -143,12 +143,12 @@ window.plan5_8 = {
     },
     // Tuần 8
     {
-      week_label: "Tuần 8: Fintech & Banking Deep Dive",
+      week_label: "Tuần 8: Fintech & Banking Deep Dive (Review Unit 18)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["digital onboarding", "eKYC", "identity verification", "document OCR", "liveness detection", "facial recognition", "customer due diligence (CDD)", "enhanced due diligence (EDD)", "risk profile", "sanction list screening", "PEP (Politically Exposed Person)", "fraud detection", "user experience", "conversion rate", "drop-off rate", "seamless", "frictionless", "regulatory compliance", "data security", "customer lifecycle"] },
             { skill: "Ngữ pháp ✍️", items: ["Review các loại mệnh đề danh từ (Noun Clauses)"] },
-            { skill: "Nghe 🎧", items: ["Xem video 'How eKYC is changing banking' trên Youtube."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập Unit 18 với focus vào elicitation techniques"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi Fintech là gì'. Role-play: Bạn là Business Analyst, AI là Expert. Tình huống: Bạn hỏi AI định nghĩa đơn giản về Fintech."] },
         ]},
         { day_label: "Thứ 3", tasks: [
