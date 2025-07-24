@@ -1,9 +1,9 @@
 window.plan1_4 = {
-  title: "Tuần 1-4: Nền tảng & Giao tiếp thực chiến (Units 1,2,3,4,5,6,8,9,11,18)",
-  goal: "Luyện tập các tình huống giao tiếp công việc và phỏng vấn. Xây dựng từ vựng, ngữ pháp cốt lõi và hoàn thành nền tảng nghe với các unit đã chọn.",
+  title: "Tuần 1-4: Nền tảng & Giao tiếp thực chiến (Units 1,2,3,4,5,6,8,9,11,18 - Học trong 2 tuần đầu)",
+  goal: "Luyện tập các tình huống giao tiếp công việc và phỏng vấn. Xây dựng từ vựng, ngữ pháp cốt lõi và hoàn thành nền tảng nghe với các unit đã chọn trong 2 tuần đầu.",
   weeks: [
     {
-      week_label: "Tuần 1: General Business & Interview Basics (Units 1,2,3,4,5,6)",
+      week_label: "Tuần 1: General Business & Interview Basics (Units 1,2,3,4,5)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["colleague", "agenda", "minutes (of meeting)", "follow-up", "client", "stakeholder", "project", "task", "objective", "goal", "strategy", "tactic", "resource", "budget", "schedule", "milestone", "deadline", "deliverable", "outcome", "scope"] },
@@ -41,89 +41,89 @@ window.plan1_4 = {
             { skill: "Nói 🗣️", items: ["Chọn 2 prompts bạn thấy khó nhất trong tuần và thực hành lại."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
-            { skill: "Nghe 🎧", items: ["Nghe lại và chép chính tả một đoạn hội thoại từ 1-2 unit bạn cảm thấy khó nhất trong tuần (Units 1-6)."] },
+            { skill: "Nghe 🎧", items: ["Nghe lại và chép chính tả một đoạn hội thoại từ 1-2 unit bạn cảm thấy khó nhất trong tuần (Units 1-5)."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại prompt 'Tự giới thiệu' và 'Mô tả dự án gần nhất'. Tự ghi âm và nghe lại để cải thiện."] },
             { skill: "Viết 📝", items: ["Xem lại các thì đã học. Viết 5 câu về công việc của bạn, mỗi câu dùng một thì khác nhau."] },
         ]},
       ]
     },
     {
-      week_label: "Tuần 2: Client & Business Communication (Units 8,9)",
+      week_label: "Tuần 2: Client & Business Communication (Units 6,8,9,11,18)",
       days: [
         { day_label: "Thứ 2", tasks: [
             { skill: "Từ vựng 📚", items: ["SDLC (Software Development Life Cycle)", "phase", "planning", "requirement", "analysis", "design", "implementation", "coding", "testing", "deployment", "maintenance", "Waterfall model", "iterative", "V-Model", "stakeholder analysis", "feasibility study", "project plan", "architecture", "module", "integration"] },
             { skill: "Ngữ pháp ✍️", items: ["Câu so sánh (Comparative & Superlative)"] },
-            { skill: "Nghe 🎧", items: ["Học Unit 8 - Tactics for Listening: Developing"] },
+            { skill: "Nghe 🎧", items: ["Học Unit 6 - Tactics for Listening: Developing"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Đặt lịch demo'. Role-play: Bạn là Business Analyst, AI là Client. Tình huống: Bạn gọi điện/nhắn khách để mời họ tham gia buổi demo."] },
         ]},
         { day_label: "Thứ 3", tasks: [
             { skill: "Từ vựng 📚", items: ["Agile", "Scrum", "Kanban", "Sprint", "backlog", "user story", "epic", "theme", "Product Owner", "Scrum Master", "Development Team", "daily stand-up", "Sprint Planning", "Sprint Review", "Sprint Retrospective", "velocity", "burndown chart", "increment", "definition of done", "MVP (Minimum Viable Product)"] },
             { skill: "Ngữ pháp ✍️", items: ["Modal Verbs (can, could, may, might) - Khả năng, sự cho phép"] },
-            { skill: "Nghe 🎧", items: ["Học Unit 9 - Tactics for Listening: Developing"] },
+            { skill: "Nghe 🎧", items: ["Học Unit 8 - Tactics for Listening: Developing"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Giới thiệu hệ thống'. Role-play: Bạn là Business Analyst, AI là New Client. Tình huống: Bạn giải thích tổng quan hệ thống cho khách hàng mới."] },
         ]},
         { day_label: "Thứ 4", tasks: [
             { skill: "Từ vựng 📚", items: ["gather", "elicit", "specify", "validate", "verify", "document", "prioritize", "manage", "trace", "ambiguous", "unambiguous", "clear", "concise", "complete", "consistent", "testable", "functional requirement", "non-functional requirement", "business rule", "constraint"] },
             { skill: "Viết 📝", items: ["Viết một user story đơn giản cho chức năng 'Login' theo format: \"As a [user], I want to [action], so that [benefit].\""] },
-            { skill: "Nghe 🎧", items: ["Ôn tập Unit 8-9"] },
+            { skill: "Nghe 🎧", items: ["Học Unit 9 - Tactics for Listening: Developing"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi tính năng khách cần nhất'. Role-play: Bạn là Business Analyst, AI là Client. Tình huống: Bạn hỏi khách đâu là chức năng quan trọng nhất với họ."] },
         ]},
         { day_label: "Thứ 5", tasks: [
             { skill: "Từ vựng 📚", items: ["prototype", "wireframe", "mockup", "UI (User Interface)", "UX (User Experience)", "usability", "accessibility", "workflow", "use case", "diagram", "flowchart", "sequence diagram", "activity diagram", "state machine diagram", "data flow diagram", "BPMN", "UML", "model", "notation", "component"] },
             { skill: "Ngữ pháp ✍️", items: ["Modal Verbs (should, must, have to) - Lời khuyên, sự bắt buộc"] },
-            { skill: "Nghe 🎧", items: ["Nghe podcast 'BA-Blocks' về chủ đề 'What is a BRD?'."] },
+            { skill: "Nghe 🎧", items: ["Học Unit 11 - Tactics for Listening: Developing"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi cảm nhận sau khi dùng thử'. Role-play: Bạn là Business Analyst, AI là Client. Tình huống: Bạn hỏi cảm nhận của khách hàng sau khi test bản beta."] },
         ]},
         { day_label: "Thứ 6", tasks: [
             { skill: "Từ vựng 📚", items: ["quality assurance (QA)", "quality control (QC)", "unit testing", "integration testing", "system testing", "acceptance testing (UAT)", "regression testing", "performance testing", "test case", "test script", "test plan", "bug report", "defect", "severity", "priority", "fix", "patch", "hotfix", "release", "version control"] },
             { skill: "Viết 📝", items: ["Viết 3 'acceptance criteria' cho user story 'Login' đã viết hôm T4."] },
-            { skill: "Nghe 🎧", items: ["Xem video trên Youtube giải thích 'Use Case Diagrams for Beginners'."] },
+            { skill: "Nghe 🎧", items: ["Học Unit 18 - Tactics for Listening: Developing"] },
             { skill: "Nói 🗣️", items: ["Prompt: 'Hỏi về yêu cầu API'. Role-play: Bạn là Business Analyst, AI là Technical Partner. Tình huống: Bạn hỏi đối tác về format dữ liệu API họ cung cấp."] },
         ]},
         { day_label: "Thứ 7", tasks: [
             { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Nhóm các từ theo chủ đề (SDLC, Agile, Testing) để dễ nhớ."] },
-            { skill: "Nghe 🎧", items: ["Nghe lại toàn bộ Unit 8-9 ở tốc độ 1.25x hoặc 1.5x để thử thách."] },
+            { skill: "Nghe 🎧", items: ["Ôn tập toàn bộ Units 6,8,9,11,18 ở tốc độ 1.25x hoặc 1.5x để thử thách."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại 2-3 prompt về 'Gặp khách hàng' mà bạn thấy cần cải thiện."] },
         ]},
         { day_label: "Chủ nhật", tasks: [
-            { skill: "Nghe 🎧", items: ["Ghi lại 10 cấu trúc câu hay nhất bạn học được từ Unit 8-9."] },
+            { skill: "Nghe 🎧", items: ["Ghi lại 10 cấu trúc câu hay nhất bạn học được từ Units 6,8,9,11,18."] },
             { skill: "Nói 🗣️", items: ["Thực hành lại 2-3 prompt về 'Gặp khách hàng' với vai trò ngược lại (bạn là khách hàng)."] },
             { skill: "Viết 📝", items: ["Viết một đoạn văn ngắn so sánh 2 phương pháp testing, ví dụ 'unit testing' và 'system testing'."] },
         ]},
       ]
     },
     {
-      week_label: "Tuần 3: Internal & Business Communication (Unit 11)",
+      week_label: "Tuần 3: Ôn tập & Thực hành nâng cao",
       days: [
         { day_label: "Thứ 2", tasks: [
-            { skill: "Từ vựng 📚", items: ["bank", "financial institution", "central bank", "commercial bank", "investment bank", "retail banking", "corporate banking", "account", "savings account", "checking account (current account)", "deposit", "withdrawal", "transfer", "transaction", "balance", "statement", "interest rate", "credit", "debit", "overdraft"] },
-            { skill: "Ngữ pháp ✍️", items: ["Câu bị động (Passive Voice) - Hiện tại đơn & Quá khứ đơn"] },
-            { skill: "Nghe 🎧", items: ["Học Unit 11 - Tactics for Listening: Developing"] },
-            { skill: "Nói 🗣️", items: ["Prompt: 'Trả lời điện thoại khách hàng'. Role-play: Bạn là Business Analyst, AI là Customer. Tình huống: Bạn nghe máy và hỏi khách cần giúp gì."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập từ vựng tuần 1-2", "Tạo flashcards cho 50 từ khó nhất"] },
+            { skill: "Ngữ pháp ✍️", items: ["Ôn tập tất cả các thì đã học (Đơn, Tiếp diễn, Hoàn thành)"] },
+            { skill: "Nghe 🎧", items: ["Nghe lại Units 1-5 ở tốc độ 1.5x"] },
+            { skill: "Nói 🗣️", items: ["Thực hành lại 3 prompts khó nhất từ tuần 1"] },
         ]},
         { day_label: "Thứ 3", tasks: [
-            { skill: "Từ vựng 📚", items: ["loan", "mortgage", "debt", "asset", "liability", "collateral", "credit score", "credit history", "interest", "principal", "investment", "stock", "bond", "share", "portfolio", "dividend", "capital", "revenue", "profit", "loss"] },
-            { skill: "Ngữ pháp ✍️", items: ["Passive Voice - Hiện tại hoàn thành & Tương lai đơn"] },
-            { skill: "Nghe 🎧", items: ["Nghe 1 tập '6 Minute English' của BBC về chủ đề tiền bạc/kinh doanh."] },
-            { skill: "Nói 🗣️", items: ["Prompt: 'Nhắn tin chào hỏi'. Role-play: Bạn là Business Analyst, AI là Colleague. Tình huống: Bạn mở đầu cuộc trò chuyện với đồng nghiệp bằng lời chào xã giao."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập từ vựng tuần 1-2", "Tạo mind map cho các chủ đề chính"] },
+            { skill: "Ngữ pháp ✍️", items: ["Ôn tập Modal Verbs và Câu so sánh"] },
+            { skill: "Nghe 🎧", items: ["Nghe lại Units 6,8,9,11,18 ở tốc độ 1.5x"] },
+            { skill: "Nói 🗣️", items: ["Thực hành lại 3 prompts khó nhất từ tuần 2"] },
         ]},
         { day_label: "Thứ 4", tasks: [
-            { skill: "Từ vựng 📚", items: ["payment", "digital payment", "e-wallet (digital wallet)", "mobile payment", "contactless payment", "QR code", "payment gateway", "processor", "acquirer", "issuer", "merchant", "customer", "authentication", "authorization", "settlement", "clearing", "remittance", "cross-border payment", "P2P (peer-to-peer)", "B2C (business-to-consumer)"] },
-            { skill: "Viết 📝", items: ["Mô tả các bước để thực hiện một thanh toán bằng mã QR, sử dụng 5-7 từ vựng mới."] },
-            { skill: "Nghe 🎧", items: ["Xem video trên Youtube giải thích 'How Digital Payments Work'."] },
-            { skill: "Nói 🗣️", items: ["Prompt: 'Báo lỗi hệ thống'. Role-play: Bạn là Business Analyst, AI là IT Support. Tình huống: Bạn báo với team kỹ thuật về một lỗi hệ thống khẩn cấp."] },
+            { skill: "Từ vựng 📚", items: ["Làm quiz từ vựng online", "Kiểm tra từ vựng với flashcards"] },
+            { skill: "Viết 📝", items: ["Viết 5 câu sử dụng các thì đã học"] },
+            { skill: "Nghe 🎧", items: ["Nghe podcast Business English"] },
+            { skill: "Nói 🗣️", items: ["Thực hành tự do với các prompts đã học"] },
         ]},
         { day_label: "Thứ 5", tasks: [
-            { skill: "Từ vựng 📚", items: ["Fintech", "startup", "disruption", "incumbent", "regulator", "RegTech", "InsurTech", "WealthTech", "blockchain", "cryptocurrency", "Bitcoin", "Ethereum", "smart contract", "DeFi (Decentralized Finance)", "NFT (Non-Fungible Token)", "tokenization", "AI (Artificial Intelligence)", "machine learning", "big data", "robo-advisor"] },
-            { skill: "Ngữ pháp ✍️", items: ["Câu điều kiện loại 1 (Real condition)"] },
-            { skill: "Nghe 🎧", items: ["Xem 1 video TED-Ed về một khái niệm Fintech (VD: Blockchain)."] },
-            { skill: "Nói 🗣️", items: ["Prompt: 'Thảo luận công tác'. Role-play: Bạn là Business Analyst, AI là Team Member. Tình huống: Bạn cùng đồng nghiệp lên lịch trình đi công tác."] },
+            { skill: "Từ vựng 📚", items: ["Ôn tập từ vựng theo chủ đề", "Tạo câu chuyện với từ vựng đã học"] },
+            { skill: "Ngữ pháp ✍️", items: ["Ôn tập tất cả ngữ pháp đã học"] },
+            { skill: "Nghe 🎧", items: ["Nghe TED Talk về Business"] },
+            { skill: "Nói 🗣️", items: ["Thực hành tự do với các prompts đã học"] },
         ]},
         { day_label: "Thứ 6", tasks: [
-            { skill: "Từ vựng 📚", items: ["security", "fraud", "cybersecurity", "encryption", "decryption", "firewall", "malware", "phishing", "two-factor authentication (2FA)", "biometrics", "KYC (Know Your Customer)", "AML (Anti-Money Laundering)", "compliance", "regulation", "data privacy", "GDPR", "vulnerability", "threat", "risk assessment", "mitigation"] },
-            { skill: "Viết 📝", items: ["Viết một cảnh báo ngắn cho người dùng về một email 'phishing', giải thích các dấu hiệu nhận biết."] },
-            { skill: "Nghe 🎧", items: ["Nghe podcast 'Security Now' hoặc 'Darknet Diaries' về một vụ việc an ninh mạng."] },
-            { skill: "Nói 🗣️", items: ["Prompt: 'Cảm ơn sau khi làm việc cùng nhau'. Role-play: Bạn là Business Analyst, AI là Developer. Tình huống: Bạn cảm ơn dev đã giúp đỡ trong dự án vừa rồi."] },
+            { skill: "Từ vựng 📚", items: ["Kiểm tra từ vựng cuối tuần", "Làm quiz tổng hợp"] },
+            { skill: "Viết 📝", items: ["Viết đoạn văn tổng hợp kiến thức đã học"] },
+            { skill: "Nghe 🎧", items: ["Nghe podcast Business English"] },
+            { skill: "Nói 🗣️", items: ["Thực hành tự do với các prompts đã học"] },
         ]},
         { day_label: "Thứ 7", tasks: [
             { skill: "Từ vựng 📚", items: ["Ôn tập 100 từ vựng đã học trong tuần.", "Vẽ sơ đồ tư duy liên kết các từ về Banking và Fintech."] },
